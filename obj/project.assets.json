@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Amoeba\\Amoeba\\Amoeba.csproj",
+      "projectUniqueName": "C:\\Projects\\Amoeba\\Amoeba.csproj",
       "projectName": "Amoeba",
-      "projectPath": "C:\\Projects\\Amoeba\\Amoeba\\Amoeba.csproj",
+      "projectPath": "C:\\Projects\\Amoeba\\Amoeba.csproj",
       "packagesPath": "C:\\Users\\rizot\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Amoeba\\Amoeba\\obj\\",
+      "outputPath": "C:\\Projects\\Amoeba\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rizot\\AppData\\Roaming\\NuGet\\NuGet.Config",

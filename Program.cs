@@ -1,25 +1,47 @@
-var builder = WebApplication.CreateBuilder(args);
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
 
-// Add services to the container.
-builder.Services.AddRazorPages();
+string value1 = " a";
+string value2 = "A ";
+Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
+Console.WriteLine("a" != "a");
+Console.WriteLine(1 != 2);
 
-var app = builder.Build();
+string myValue = "a";
+Console.WriteLine(myValue != "a");
+Console.WriteLine(1 > 2);
+Console.WriteLine(1 < 2);
+Console.WriteLine(1 >= 1);
+Console.WriteLine(1 <= 1);
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+string pangram = "The quick brown fox jumps over the lazy dog.";
+Console.WriteLine(pangram.Contains("fox"));
+Console.WriteLine(pangram.Contains("cow"));
+
+int saleAmount = 1001;
+// int discount = saleAmount > 1000 ? 100 : 50;
+
+Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
+
+Random random = new Random();
+int value = random.Next();
+Random coin = new Random();
+Console.WriteLine((coin.Next(0, 2) == 0) ? "heads" : "tails");
+
+string permission = "Admin|Manager";
+int level = 55;
+
+
+if (permission.Contains(level > 55) {
+    Console.WriteLine("Welcome, Super Admin user!");
+} else if (permission.Contains(level < 55) {
+    Console.WriteLine("Welcome, Admin user!");
+} else if (permission.Contains(level > 20) {
+    Console.WriteLine("Contact an Admin for access.");
+} else if (permission.Contains(level < 20) {
+    Console.WriteLine("You don't have sufficient privileges");
+} else {
+    Console.WriteLine("You don't have sufficient privileges");
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapRazorPages();
-
-app.Run();
+    

@@ -1,2 +1,2 @@
 # Amoeba
-Amoeba is a website written in HTML and Bootstrap.
+Amoeba is a C# and lastly .NET console app.
